@@ -1,9 +1,11 @@
 
 
-½ÇÇàÆÄÀÏ °æ·Î
+ì‹¤í–‰íŒŒì¼ ê²½ë¡œ
 C:\XAMPP\xampp-control  
- - Apache ½ÃÀÛ ÈÄ http://localhost:80/ Å×½ºÆ® È­¸é
-È¨ µð·ºÅä¸®
+ - Apache ì‹œìž‘ í›„ http://localhost:80/ í…ŒìŠ¤íŠ¸ í™”ë©´
+ 
+í™ˆ ë””ë ‰í† ë¦¬
 C:\XAMPP\htdocs
-php ¼³Á¤ÆÄÀÏ
+
+php ì„¤ì •íŒŒì¼
 C:\xampp\php\php.ini
