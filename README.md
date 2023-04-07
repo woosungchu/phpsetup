@@ -4,4 +4,9 @@
 2. 실행파일 경로
   C:\XAMPP\xampp-control  
     - Apache 시작 후 http://localhost:80/ 테스트 화면
+    - 본 프로젝트는 http://localhost/phpsetup/
+
+https://getbootstrap.com/docs/5.3/examples/blog/
+
+
 
