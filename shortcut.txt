@@ -1,0 +1,22 @@
+Ctrl+D 오늘 날짜 YYYY-MM-DD 출력(date)
+Ctrl+S 저장(save)
+Ctrl+J 현재 줄 복제
+Ctrl+R 현재 줄 선택
+Ctrl+U 대문자로 변환(upper)
+Ctrl+L 소문자로 변환(lower)
+Ctrl+W (선택한 상태에서) 다음 단어 선택
+Ctrl+G 줄번호 이동(go to line) ★
+Alt+⇞ PgUp 왼쪽 문서로
+Alt+⇟ PgDn 오른쪽 문서로
+Alt+C 컬럼 모드 선택(칸 단위 선택, 세로 블럭 선택) ★
+Alt+⇧ Shift+3 디렉토리 창 토글
+Alt+⇧ Shift+Del 줄 삭제 ★★
+Ctrl+⇧ Shift+L 줄번호 보기 토글
+Ctrl+⇧ Shift+F 코드 생략 사용 토글
+Ctrl+⇧ Shift+W 워드랩 사용 토글
+F12 이전 문서 토글 ★
+
+Ctrl+] 괄호 짝찾기
+Ctrl+[ 태그 짝찾기
+Ctrl+⇧ Shift+] 괄호 내용 선택
+Ctrl+⇧ Shift+[ 태그 내용 선택
