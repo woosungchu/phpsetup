@@ -1,4 +1,6 @@
+/* 기본 마진 0 */
 body{margin:0;}
 
+/* 카루셀 세로길이 지정 */
 #myCarousel .carousel-item{ height:32rem; background-color:#777;}
 #myCarousel .carousel-item img { height:32rem; min-width:100%;}
