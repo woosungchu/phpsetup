@@ -1,13 +1,15 @@
+
+
 <header>
 	<nav class="navbar navbar-expand-md navbar-light">
 		<a class="navbar-brand" href="?page=main">빵집투어<a>
 		<button class="navbar-toggler" type="button"
-		data-toggle="collapse" data-target="navbarCollapse"
+		data-toggle="collapse" data-target="#navbarCollapse"
 		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggle-icon"></span>
+			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div id="navbarCollapse" class="collapse navbar-collapse">
-			<ul class="navbar-nav mr-auto"><!-- mr-auto 로 밀어내기 -->
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a href="?page=timeline" class="nav-link">빵집소개</a></li>
 				<li class="nav-item"><a href="?page=recommend" class="nav-link">브랜드추천</a></li>
 				<li class="nav-item"><a href="?page=review" class="nav-link">브랜드후기</a></li>
@@ -20,3 +22,4 @@
 		</div>
 	</nav>
 </header>
+ 

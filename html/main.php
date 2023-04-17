@@ -40,7 +40,10 @@
 	</div>
 
 	<!-- inner page -->
-	<div>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-8"> test </div>
+			<div class="col-4">test</div>
+		</div>
 	</div>
 </main>
