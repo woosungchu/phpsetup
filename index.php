@@ -17,7 +17,10 @@
 <?php include 'html/header.php' ?>
 
 <?php
-switch($_GET['page']) {
+$page = isset($_GET['page']) ? $_GET['page'] : 'main';
+// echo $page;
+
+switch($page) {
 	case 'main':
 		include 'html/main.php';
 		break;
@@ -35,7 +38,6 @@ switch($_GET['page']) {
 		break;
 	default:
 		include 'html/main.php';
-
 }
 ?>
 
