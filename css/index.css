@@ -6,3 +6,4 @@ body{margin:0;}
 #myCarousel .carousel-item img { height:32rem; min-width:100%;}
 
 .jc-spbt { justify-content: space-between;}
+.file-thumbnail { height: 2.25rem; width: 2.25rem;}

@@ -50,12 +50,14 @@
 						<a href="">더 보기</a>
 					</div>
 					<div id="" class="card-body">
-						<div id="" class="">
+						<div id="" class="d-flex">
 							<div id="" class="file-thumbnail">
-								썸네일
+								<img class="w-100 h-100" src="assets/image2.jpg" border="0" alt="여행후기1">
 							</div>
-							<div id="" class="">
-								텍스트
+							<div id="" class="ms-3">
+								<h6 class="">
+									<a href="#"">텍스트</a>
+								</h6>
 							</div>
 						</div>
 					</div>
