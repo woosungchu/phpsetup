@@ -42,8 +42,25 @@
 	<!-- inner page -->
 	<div class="container">
 		<div class="row">
-			<div class="col-8"> test </div>
-			<div class="col-4">test</div>
+			<div class="col-8">최근에 등록된 여행후기 글목록(최근글) 5개와 더보기 버튼</div>
+			<div class="col-4">
+				<div class="card">
+					<div id="" class="card-header d-flex jc-spbt">
+						<h6>최근 여행후기</h6>
+						<a href="">더 보기</a>
+					</div>
+					<div id="" class="card-body">
+						<div id="" class="">
+							<div id="" class="file-thumbnail">
+								썸네일
+							</div>
+							<div id="" class="">
+								텍스트
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </main>
