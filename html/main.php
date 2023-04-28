@@ -7,27 +7,18 @@
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
 		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="d-block w-100" src="assets/image1.jpg" alt="롤러코스터" title="뒤집어져 떨어지는 롤러코스터">
-				<div class="carousel-caption">
-					<h5>뒤집어져 떨어지는 롤러코스터</h5>
-					<p>오금이 저리는...</p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="d-block w-100" src="assets/image2.jpg" alt="사슴" title="사슴이 풀 먹는 아름다운 자연">
-				<div class="carousel-caption">
-					<h5>뒤집어져 떨어지는 롤러코스터</h5>
-					<p>오금이 저리는...</p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img class="d-block w-100" src="assets/image3.jpg" alt="호랑이" title="야생 속의 호랑이">
-				<div class="carousel-caption">
-					<h5>뒤집어져 떨어지는 롤러코스터</h5>
-					<p>오금이 저리는...</p>
-				</div>
-				</div>
+		<?php
+			for($i=1; $i<5;$i++){
+				echo
+				'<div class="carousel-item '.($i==1?'active':'').'">
+					<img class="d-block w-100" src="assets/image'.$i.'.jpg" alt="카루셀'.$i.'" title="'.$i.'번째 카루셀 사진">
+					<div class="carousel-caption">
+						<h5>'.$i.'번째 사진 설명 1</h5>
+						<p>'.$i.'번째 사진 설명 2</p>
+					</div>
+				</div>';
+			}
+		?>
 		</div>
 	    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
 		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -53,11 +44,11 @@
 					<div class="card-body">
 					<?php
 
-					for ($x = 1; $x < 4; $x++) {
+					for ($x = 1; $x < 5; $x++) {
 						echo 
 						'<div class="d-flex">
 							<div class="file-thumbnail">
-								<img class="w-100 h-100" src="assets/image'.$x.'.jpg" border="0" alt="여행후기1">
+								<img class="w-100 h-100" src="assets/image'.$x.'.jpg" border="0" alt="여행후기'.$x.'." title="여행후기 '.$x.'번째 사진">
 							</div>
 							<div class="ml-3">
 								<h6 class="mb-1"><a href="#" class="small">텍스트</a></h6>
