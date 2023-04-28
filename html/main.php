@@ -45,21 +45,32 @@
 			<div class="col-8">최근에 등록된 여행후기 글목록(최근글) 5개와 더보기 버튼</div>
 			<div class="col-4">
 				<div class="card">
-					<div id="" class="card-header d-flex jc-spbt">
+					<div class="card-header d-flex jc-spbt">
 						<h6>최근 여행후기</h6>
-						<a href="">더 보기</a>
+						<a href="#">더 보기</a>
 					</div>
-					<div id="" class="card-body">
-						<div id="" class="d-flex">
-							<div id="" class="file-thumbnail">
-								<img class="w-100 h-100" src="assets/image2.jpg" border="0" alt="여행후기1">
+					<!-- body -->
+					<div class="card-body">
+					<?php
+
+					for ($x = 1; $x < 4; $x++) {
+						echo 
+						'<div class="d-flex">
+							<div class="file-thumbnail">
+								<img class="w-100 h-100" src="assets/image'.$x.'.jpg" border="0" alt="여행후기1">
 							</div>
-							<div id="" class="ms-3">
-								<h6 class="">
-									<a href="#"">텍스트</a>
-								</h6>
+							<div class="ml-3">
+								<h6 class="mb-1"><a href="#" class="small">텍스트</a></h6>
+								<div class="small">
+									<span>주우성</span><span>바로 전</span>
+								</div>
 							</div>
-						</div>
+						</div>';
+					}
+
+					?>
+						
+
 					</div>
 				</div>
 			</div>
