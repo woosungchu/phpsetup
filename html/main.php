@@ -9,15 +9,15 @@
 		<div class="carousel-inner">
 		<?php
 			$arr = array(
-				array(1,'제주도 그림','2023.4.28~6.29','놀러오세요 제주섬'),
-				array(2,'유채꽃 축제 홍보 포스터','2023.3.28~6.23','유채꽃축제 가족들과 함께 놀러오세요'),
-				array(3,'백록담 전경','2023.4.22~10.29', '하늘의 거울, 한라산의 백록담'),
-				array(4,'가을의 제주도 그림','2023.4.18~9.10','제주도의 계절, 가을입니다')
+				array(0,'제주도 그림','2023.4.28~6.29','놀러오세요 제주섬'),
+				array(1,'유채꽃 축제 홍보 포스터','2023.3.28~6.23','유채꽃축제 가족들과 함께 놀러오세요'),
+				array(2,'백록담 전경','2023.4.22~10.29', '하늘의 거울, 한라산의 백록담'),
+				array(3,'가을의 제주도 그림','2023.4.18~9.10','제주도의 계절, 가을입니다')
 			);
 			foreach($arr as list($index, $title, $date, $description)){
 				echo
 				'<div class="carousel-item '.($index==1?'active':'').'">
-					<img class="d-block w-100" src="assets/image'.$index.'.jpg" alt="'.$title.'" title="'.$title.'">
+					<img class="d-block w-100" src="assets/carousel'.$index.'.jpg" alt="'.$title.'" title="'.$title.'">
 					<div class="carousel-caption">
 						<h5>'.$description.'</h5>
 						<p>'.$date.'</p>
@@ -41,6 +41,10 @@
 		<div class="row">
 			<!-- 추천 여행지 -->
 			<div class="col-8">
+				<div class="card-header d-flex jc-spbt">
+					<h6>추천 여행지 목록</h6>
+					<a href="#">더 보기</a>
+				</div>
 				<div class="card-group">
 				  <?php
 					$arr = array(
@@ -55,8 +59,8 @@
 							<img class="card-img-top" src="assets/reco'.$idx.'.jpg" alt="'.$title.' 사진" title="'.$title.'"
 									style="height:180px;width:100%;display:block;">
 							<div class="card-body">
-							  <h5 class="card-title">'.$title.'</h5>
-							  <p class="card-text" style="max-height:140px;overflow:hidden;">'.$text.'</p>
+							  <h5 class="card-title ellipsis">'.$title.'</h5>
+							  <p class="card-text ellipsis lineclamp">'.$text.'</p>
 							  <p class="card-text"><small class="text-muted">'.$regDate.'</small></p>
 							</div>
 						  </div>';
@@ -80,10 +84,10 @@
 
 					<?php
 						$arr = array(
-							array(1,'여기 개쩔어요. 맛집도 많습니다','박소연','바로 전','제주도 그림'),
-							array(2,'비가 온 다음날이었는데도 진짜 예뻣습니다. 꽃 떨어지기 전에 꼭 가세요','이미영','어제','유채꽃 축제 홍보 포스터'),
-							array(3,'가이드님 따라 올라갔는데, 진짜 힘들었지만 제주도 여행 중 여기가 제일 기억에 남습니다.','김수민','2일 전','백록담 전경'),
-							array(4,'개별로임','홍정민','3일 전','가을의 제주도 그림')
+							array(0,'여기 개쩔어요. 맛집도 많습니다','박소연','바로 전','제주도 그림'),
+							array(1,'비가 온 다음날이었는데도 진짜 예뻣습니다. 꽃 떨어지기 전에 꼭 가세요','이미영','어제','유채꽃 축제 홍보 포스터'),
+							array(2,'가이드님 따라 올라갔는데, 진짜 힘들었지만 제주도 여행 중 여기가 제일 기억에 남습니다.','김수민','2일 전','백록담 전경'),
+							array(3,'개별로임','홍정민','3일 전','가을의 제주도 그림')
 						);
 						foreach($arr as list($index, $text, $writer, $date, $imgtitle)){
 							echo
@@ -104,7 +108,7 @@
 
 					</div>
 				</div>
-			</div>
+			</div><!-- 여행후기 끝-->
 		</div>
 	</div>
 </main>
