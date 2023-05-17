@@ -13,4 +13,5 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 .ellipsis.lineclamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; white-space:unset;}
 
 /* jeju custom */
-.bg-jeju { background-color:lightsalmon;}
+.bg-jeju { background-color:lightsalmon; color:white;}
+.bg-jeju-reverse { background-color:white; color:lightsalmon;}

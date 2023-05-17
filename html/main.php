@@ -35,6 +35,28 @@
 			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			  <span class="sr-only">Next</span>
 			</a>
+		</div><!-- carousel 끝-->
+
+		<!-- 추천 여행지 -->
+		<div class="row">
+			<div class="card" style="width:100%">
+				<div class="card-header bg-jeju-reverse">
+					<h6>추천 여행지 목록</h6>
+				</div>
+				<div class="card-body">
+					<div class="row">
+						<div class="col-6">
+							50%
+						</div>
+						<div class="col-6">
+							50%
+						</div>
+					</div>
+					<div class="row mt-4">
+						<button class="btn" style="margin:0 auto; outline:lightsalmon solid 1px">추천여행지 더보기</button
+					</div>
+				</div><!-- card body -->
+			</div>
 		</div>
 	</div>
 
