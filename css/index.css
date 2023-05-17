@@ -11,3 +11,6 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 
 .ellipsis {overflow: hidden;text-overflow: ellipsis; white-space:nowrap;}
 .ellipsis.lineclamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; white-space:unset;}
+
+/* jeju custom */
+.bg-jeju { background-color:lightsalmon;}

@@ -1,39 +1,41 @@
-<main>
-	<!-- carousel -->
-	<div id="myCarousel" class="carousel slide mb-5" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-		<?php
-			$arr = array(
-				array(0,'제주도 그림','2023.4.28~6.29','놀러오세요 제주섬'),
-				array(1,'유채꽃 축제 홍보 포스터','2023.3.28~6.23','유채꽃축제 가족들과 함께 놀러오세요'),
-				array(2,'백록담 전경','2023.4.22~10.29', '하늘의 거울, 한라산의 백록담'),
-				array(3,'가을의 제주도 그림','2023.4.18~9.10','제주도의 계절, 가을입니다')
-			);
-			foreach($arr as list($index, $title, $date, $description)){
-				echo
-				'<div class="carousel-item '.($index==1?'active':'').'">
-					<img class="d-block w-100" src="assets/carousel'.$index.'.jpg" alt="'.$title.'" title="'.$title.'">
-					<div class="carousel-caption">
-						<h5>'.$description.'</h5>
-						<p>'.$date.'</p>
-					</div>
-				</div>';
-			}
-		?>
+<main style="padding-top:70px;">
+	<div class="container">
+		<!-- carousel -->
+		<div id="myCarousel" class="carousel slide mb-5" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			<?php
+				$arr = array(
+					array(0,'제주도 그림','2023.4.28~6.29','놀러오세요 제주섬'),
+					array(1,'유채꽃 축제 홍보 포스터','2023.3.28~6.23','유채꽃축제 가족들과 함께 놀러오세요'),
+					array(2,'백록담 전경','2023.4.22~10.29', '하늘의 거울, 한라산의 백록담'),
+					array(3,'가을의 제주도 그림','2023.4.18~9.10','제주도의 계절, 가을입니다')
+				);
+				foreach($arr as list($index, $title, $date, $description)){
+					echo
+					'<div class="carousel-item '.($index==1?'active':'').'">
+						<img class="d-block w-100" src="assets/carousel'.$index.'.jpg" alt="'.$title.'" title="'.$title.'">
+						<div class="carousel-caption">
+							<h5>'.$description.'</h5>
+							<p>'.$date.'</p>
+						</div>
+					</div>';
+				}
+			?>
+			</div>
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
 		</div>
-	    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		  <span class="sr-only">Next</span>
-	    </a>
 	</div>
 
 	<!-- inner page -->
