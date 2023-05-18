@@ -15,3 +15,4 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 /* jeju custom */
 .bg-jeju { background-color:lightsalmon; color:white;}
 .bg-jeju-reverse { background-color:white; color:lightsalmon;}
+.bg-jeju .nav-link {color:white !important;}
