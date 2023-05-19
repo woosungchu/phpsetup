@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="2023national">
 <meta name="author" content="woosungchu">
+<!-- title, favicon -->
+<title>신나는 제주여행, 제주투어</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <!-- statics -->
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/jquery-ui.js"></script>

@@ -1,5 +1,5 @@
 /* 기본 마진 0 */
-body{margin:0;}
+body{margin:0; background-color:#ebedf2;}
 a, a:hover {color: rgb(52,64,80)/* black*/}; 
 
 /* 카루셀 세로길이 지정 */
@@ -16,3 +16,21 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 .bg-jeju { background-color:lightsalmon; color:white;}
 .bg-jeju-reverse { background-color:white; color:lightsalmon;}
 .bg-jeju .nav-link {color:white !important;}
+
+#reco-box {margin:10px 0; padding:6px 26px;}
+#reco-box .card-body {padding:0;}
+#reco-box .card-body .card {padding:0;}
+#reco-box .card-body .card img {width:100%; height:180px; border-radius: 7px;}
+
+.card-header, .card {border:3px solid white;}
+
+
+.jeju-scrollbar::-webkit-scrollbar {
+/*  display: none;*/
+  width: 5px;
+  height: 8px;
+/*  background-color: lightgrey;*/
+}
+.jeju-scrollbar::-webkit-scrollbar-thumb {
+  background: lightsalmon;
+}
