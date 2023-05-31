@@ -14,6 +14,8 @@
 <script src="js/bootstrap.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/index.css">
+<!-- custom jeju -->
+<script src="js/main.js"></script>
 
 </head>
 <body>

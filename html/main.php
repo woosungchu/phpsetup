@@ -74,106 +74,35 @@
 						?>
 					</div>
 					<div class="row mt-4">
-						<button class="btn" style="margin:0 auto; outline:lightgrey solid 1px">추천여행지 더보기</button
+						<button class="btn" style="margin:0 auto; outline:lightgrey solid 1px">추천여행지 더보기</button>
 					</div>
 				</div><!-- card body -->
 			</div>
 		</div>
-		<!-- test -->
-		<div id="" class="row">
-			<div id="" class="d-flex flex-row">
-				<?php
 
-					foreach($arr as list($idx,$title,$regDate,$text)){
-						echo 
-						  '<div class="card">
-							<img class="card-img-top" src="assets/reco'.$idx.'.jpg" alt="'.$title.' 사진" title="'.$title.'"
-									style="height:180px;width:100%;display:block;">
-							<div class="card-body">
-							  <h5 class="card-title ellipsis">'.$title.'</h5>
-							  <p class="card-text ellipsis lineclamp">'.$text.'</p>
-							  <p class="card-text"><small class="text-muted">'.$regDate.'</small></p>
-							</div>
-						  </div>';
-					}
-				  ?>
+
+
+
+		<!-- 여행후기 -->
+		<div class="row">
+			<div id="review-box" class="card" style="width:100%">
+				<div class="card-header bg-jeju-reverse">
+					<h3>여행후기</h3>					
+				</div>
+				<div class="card-body">
+					<ul class="nav nav-pills nav-fill">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">지역별</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">테마별</a>
+					  </li>
+					</ul>
+				</div>
 			</div>
 		</div>
+
+
 	</div>
 
-	<!-- inner page -->
-	<div class="container">
-		<div class="row">
-			<!-- 추천 여행지 -->
-			<div class="col-8">
-				<div class="card-header d-flex jc-spbt">
-					<h6>추천 여행지 목록</h6>
-					<a href="#">더 보기</a>
-				</div>
-				<div class="card-group">
-				  <?php
-					$arr = array(
-						array(0,'투명한 에메랄드빛 해변','방금 전','해발 1,950m로 우리나라에서 가장 높은 산인 한라산은 제주 여행에 있어 빼놓을 수 없는 곳이에요. 신비로운 백록담과 계절마다 색다른 아름다움을 간직한 한라산 탐방은 오랫동안 잊지 못할 추억이 될 거예요. 한라산 탐방 코스는 백록담 정상까지 오르는 관음사, 성판악 코스와 윗세오름 및 남벽분기점까지 오르는 영실, 어리목, 돈내코 코스가 있어요. 탐방로마다 난이도와 소요시간이 다르므로 각자의 체력에 맞게 코스를 선택해보세요. 계절과 날씨에 따라 일부 통제되는 구간이 있을 수도 있으니 탐방에 앞서 국립공원 홈페이지에서 탐방 정보를 확인하세요.'),
-						array(1,'아름답게 눈이 내린 숲길','2시간 전','제주를 여행한다면 수많은 관광 명소 중 어디를 가야할 지 행복한 고민을 하게 되죠. 산과 오름, 해변, 폭포, 용암동굴, 주변 섬 등 어디를 가나 천혜의 아름다운 자연 경관을 만날 수 있어요. 걷기를 좋아한다면 올레, 숲길, 휴양림 등의 다양한 형태의 명소들을 찾을 수 있어요. 아이들과 함께 라면 박물관, 미술관, 과학관, 테마파크, 민속공원 등 수많은 선택지에 놀랄 거예요. 선택의 폭이 너무 넓기 때문에 일정과 숙소에 맞춰 사전 계획을 세우는 것은 필수예요.'),
-						array(2,'아침을 깨우는 햇살','6시간 전','성산일출봉은 제주를 대표하는 자연경관 중 하나로 제주의 많은 분화구 중 드물게 바다에서 분출한 화산이에요. 약 30분 정도 소요되는 182m 정상에 올라 보세요. 정상에 오르면 지름 600m의 분화구를 볼 수 있죠. 분화구의 가장자리가 성벽처럼 보인다고 하여 성산, 정상에서 보는 일출이 장관이라고 하여 일출봉이라 해요. 매일 아침에는 일출을 보기 위해 오르는 관광객으로 늘 붐비죠. 입구의 푸른 초원에서는 멋진 사진도 찍고, 우도와 푸른 바다가 보이는 절경을 감상하며 산책할 수 있어요.')
-					);
-
-					foreach($arr as list($idx,$title,$regDate,$text)){
-						echo 
-						  '<div class="card">
-							<img class="card-img-top" src="assets/reco'.$idx.'.jpg" alt="'.$title.' 사진" title="'.$title.'"
-									style="height:180px;width:100%;display:block;">
-							<div class="card-body">
-							  <h5 class="card-title ellipsis">'.$title.'</h5>
-							  <p class="card-text ellipsis lineclamp">'.$text.'</p>
-							  <p class="card-text"><small class="text-muted">'.$regDate.'</small></p>
-							</div>
-						  </div>';
-					}
-				  ?>
-				</div>
-			</div><!-- 추천 여행지 끝 -->
-
-
-
-
-			<!-- 여행후기 -->
-			<div class="col-4">
-				<div class="card">
-					<div class="card-header d-flex jc-spbt">
-						<h6>최근 여행후기</h6>
-						<a href="#">더 보기</a>
-					</div>
-					<!-- body -->
-					<div class="card-body">
-
-					<?php
-						$arr = array(
-							array(0,'여기 개쩔어요. 맛집도 많습니다','박소연','바로 전','제주도 그림'),
-							array(1,'비가 온 다음날이었는데도 진짜 예뻣습니다. 꽃 떨어지기 전에 꼭 가세요','이미영','어제','유채꽃 축제 홍보 포스터'),
-							array(2,'가이드님 따라 올라갔는데, 진짜 힘들었지만 제주도 여행 중 여기가 제일 기억에 남습니다.','김수민','2일 전','백록담 전경'),
-							array(3,'개별로임','홍정민','3일 전','가을의 제주도 그림')
-						);
-						foreach($arr as list($index, $text, $writer, $date, $imgtitle)){
-							echo
-							'<div class="d-flex mb-1">
-								<div class="file-thumbnail">
-									<img class="w-100 h-100" src="assets/image'.$index.'.jpg" border="0" alt="여행후기'.$index.'." title="여행후기 '.$index.'번째 사진">
-								</div>
-								<div class="ml-3">
-									<h6 class="mb-1"><a href="#" class="small">'.$text.'</a></h6>
-									<div class="small">
-										<span>'.$writer.'</span><span class="ml-1">'.$date.'</span>
-									</div>
-								</div>
-							</div><hr/>';
-						}
-					?>
-						
-
-					</div>
-				</div>
-			</div><!-- 여행후기 끝-->
-		</div>
-	</div>
 </main>
