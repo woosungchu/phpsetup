@@ -34,3 +34,5 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 .jeju-scrollbar::-webkit-scrollbar-thumb {
   background: lightsalmon;
 }
+
+.nav-link.active {background-color:lightsalmon !important;}

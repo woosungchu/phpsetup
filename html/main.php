@@ -87,17 +87,21 @@
 		<div class="row">
 			<div id="review-box" class="card" style="width:100%">
 				<div class="card-header bg-jeju-reverse">
-					<h3>여행후기</h3>					
+					<h3>여행후기</h3>
 				</div>
 				<div class="card-body">
 					<ul class="nav nav-pills nav-fill">
 					  <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">지역별</a>
+						<a class="nav-link active" data-index="0" href="#">지역별</a>
 					  </li>
 					  <li class="nav-item">
-						<a class="nav-link" href="#">테마별</a>
+						<a class="nav-link" data-index="1" href="#">테마별</a>
 					  </li>
 					</ul>
+					<div id="review-body">
+						<div class="rv-body-tab">0번 탭 내용</div>
+						<div class="rv-body-tab" style="display:none;">1번 탭 내용</div>
+					</div>
 				</div>
 			</div>
 		</div>
