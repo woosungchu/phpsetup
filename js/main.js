@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	var tabchangeEvent = function(){
 		$('#review-box .nav-link.active').removeClass('active');
-//		console.log(this.text);
 		$(this).addClass('active');
+
 		var index = $(this).data('index');
 
-		$('#review-body .rv-body-tab').hide();
-		$('#review-body .rv-body-tab:eq('+index+')').show();
+		$('#review-body .rv-body-tab').removeClass('d-flex');
+		$('#review-body .rv-body-tab:eq('+index+')').addClass('d-flex');
 
 		return false; //href='#' 무시하게
 	};

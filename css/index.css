@@ -36,3 +36,5 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 }
 
 .nav-link.active {background-color:lightsalmon !important;}
+
+#review-box{min-height:700px;}

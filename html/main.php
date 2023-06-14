@@ -85,7 +85,7 @@
 
 		<!-- 여행후기 -->
 		<div class="row">
-			<div id="review-box" class="card" style="width:100%">
+			<div id="review-box" class="card mb-4" style="width:100%">
 				<div class="card-header bg-jeju-reverse">
 					<h3>여행후기</h3>
 				</div>
@@ -99,8 +99,24 @@
 					  </li>
 					</ul>
 					<div id="review-body">
-						<div class="rv-body-tab">0번 탭 내용</div>
-						<div class="rv-body-tab" style="display:none;">1번 탭 내용</div>
+						<div class="rv-body-tab d-flex d-none flex-wrap">
+
+						<?php
+						  for($i=0;$i<9;$i++){
+							echo '
+							<div class="card col-lg-6" style="">
+							  <div class="card-body">
+								<h5 class="card-title">스위스</h5>
+								<h6 class="card-subtitle text-muted">루체른</h6>
+								<p>한국인이 가장 좋아하는 스위스 여행지 TOP3</p>
+							  </div>
+							</div>
+							';
+						  };
+						?>
+
+						</div>
+						<div class="rv-body-tab d-none">1번 탭 내용</div>
 					</div>
 				</div>
 			</div>
