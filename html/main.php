@@ -102,17 +102,36 @@
 						<div class="rv-body-tab d-flex d-none flex-wrap">
 
 						<?php
-						  for($i=0;$i<9;$i++){
+						  
+						  $arr = array(
+							array(0,'스위스','루체른','한국인이 가장 좋아하는 스위스 여행지 TOP3'),
+							array(1,'이탈리아','로마','불이 꺼지지 않는 도시, 로마'),
+							array(2,'프랑스','파리','세상에서 가장 아름다운 건축물 에펠탑'),
+							array(3,'영국','맨체스터','박지성의 맨체스터 유나이티드로 오세요'),
+							array(4,'핀란드','취리히','산타할아버지의 나라, 눈 내리는 핀란드'),
+							array(5,'스위스','루체른','한국인이 가장 좋아하는 스위스 여행지 TOP3'),
+							array(6,'스위스','루체른','한국인이 가장 좋아하는 스위스 여행지 TOP3')
+						  );
+
+						  foreach($arr as list($idx,$country,$city,$text)){
 							echo '
 							<div class="card col-lg-6" style="">
 							  <div class="card-body">
-								<h5 class="card-title">스위스</h5>
-								<h6 class="card-subtitle text-muted">루체른</h6>
-								<p>한국인이 가장 좋아하는 스위스 여행지 TOP3</p>
+								<h5 class="card-title">'.$country.'</h5>
+								<h6 class="card-subtitle text-muted">'.$city.'</h6>
+								<p>'.$text.'</p>
+								<div class="rv-box-imglist">
+									<img class="" src="assets/reco'.$idx.'.jpg" alt="" title=""/>
+									<img class="" src="assets/reco'.($idx+1).'.jpg" alt="" title=""/>
+									<img class="" src="assets/reco'.($idx+2).'.jpg" alt="" title=""/>
+								</div>
+
 							  </div>
 							</div>
 							';
-						  };
+						  }
+
+
 						?>
 
 						</div>

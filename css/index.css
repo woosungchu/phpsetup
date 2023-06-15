@@ -38,3 +38,6 @@ a, a:hover {color: rgb(52,64,80)/* black*/};
 .nav-link.active {background-color:lightsalmon !important;}
 
 #review-box{min-height:700px;}
+
+.rv-box-imglist{height:120px;}
+.rv-box-imglist img {height:100%;width:32%;}
