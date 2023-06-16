@@ -85,11 +85,12 @@
 
 		<!-- 여행후기 -->
 		<div class="row">
-			<div id="review-box" class="card mb-4" style="width:100%">
-				<div class="card-header bg-jeju-reverse">
-					<h3>여행후기</h3>
+			<div id="review-box" class="mb-4 p-3 rounded" style="width:100%; background-color:#fff;">
+				<div class="pb-1">
+					<span style="font-weight:600;font-size: 1.3rem;letter-spacing: -.3px;">많은 사람들이 후기를 남겨주었어요!</span>
+					<p class="text-muted">여행후기</p>
 				</div>
-				<div class="card-body">
+				<div class="">
 					<ul class="nav nav-pills nav-fill">
 					  <li class="nav-item">
 						<a class="nav-link active" data-index="0" href="#">지역별</a>
@@ -98,6 +99,7 @@
 						<a class="nav-link" data-index="1" href="#">테마별</a>
 					  </li>
 					</ul>
+					<hr>
 					<div id="review-body">
 						<div class="rv-body-tab d-flex d-none flex-wrap">
 
@@ -115,10 +117,10 @@
 
 						  foreach($arr as list($idx,$country,$city,$text)){
 							echo '
-							<div class="card col-lg-6" style="">
-							  <div class="card-body">
-								<h5 class="card-title">'.$country.'</h5>
-								<h6 class="card-subtitle text-muted">'.$city.'</h6>
+							<div class="col-lg-6">
+							  <div class="pt-3">
+								<div class="" style="font-weight:600; font-size:1.3rem;">'.$country.'</div>
+								<div class="text-muted">'.$city.'</div>
 								<p>'.$text.'</p>
 								<div class="rv-box-imglist">
 									<img class="" src="assets/reco'.$idx.'.jpg" alt="" title=""/>
@@ -127,6 +129,7 @@
 								</div>
 
 							  </div>
+							  <hr>
 							</div>
 							';
 						  }
